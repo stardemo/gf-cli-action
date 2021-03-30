@@ -1,3 +1,4 @@
 #!/bin/sh -l
 
-echo "hello $1"
+echo "[debug] exec $1"
+gf $1

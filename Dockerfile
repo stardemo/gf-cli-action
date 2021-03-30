@@ -1,6 +1,6 @@
-FROM alpine:3.10
+FROM golang:1.16
 
-COPY LICENSE README.md /
+RUN go get -u github.com/gogf/gf-cli@v1.15.4
 
 COPY entrypoint.sh /entrypoint.sh
 
